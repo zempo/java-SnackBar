@@ -12,6 +12,7 @@ public class Customer {
 
     public Customer(String name, double cashOnHand) {
         maxId++;
+        this.id = maxId;
         this.name = name;
         this.cashOnHand = cashOnHand;
     }
