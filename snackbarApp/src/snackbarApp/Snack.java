@@ -5,6 +5,7 @@ package snackbarApp;
  */
 public class Snack {
     private static int maxId = 0;
+
     public int id;
     public Sting name;
     public int quantity;
@@ -40,4 +41,31 @@ public class Snack {
     public int getVendingMachineId() {
         return vendingMachineId;
     }
+
+    // Setters 
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    public void setCost(double newCost) {
+        this.cost = newCost;
+    }
+
+    public void setVendingMachineId(int newId) {
+        this.vendingMachineId = newId;
+    }
+
+    // special methods
+    public void setQuantity(int amtToAdd) {
+        this.quantity += amtToAdd;
+    }
+
+    public double buySnacks(double amtToBuy) {
+        this.quantity -= (int)amtToBuy;
+        return amtToBuy * cost;
+    }
+
+    public double previewCost(double previewAmount) {
+        return previewAmount * cost;
+    } 
 }
