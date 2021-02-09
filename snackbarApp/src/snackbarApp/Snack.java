@@ -56,6 +56,18 @@ public class Snack {
     }
     
     // METHODS
+    public String printSnackInfo() {
+        return "Snack "
+         + getId()
+         + " Info:"
+         + "\nName: "
+         + getName()
+         + "\nCost: "
+         + getCost()
+         + "\nQuantity: "
+         + getQuantity();
+    }
+
     public void setQuantity(int amtToAdd) {
         this.quantity += amtToAdd;
     }
