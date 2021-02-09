@@ -1,5 +1,4 @@
 package snackbarApp;
-
 /**
  * Customer
  */
@@ -17,29 +16,33 @@ public class Customer {
         this.cashOnHand = cashOnHand;
     }
 
-    // Getters
+    // GETTERS
     public int getId() {
         return id;
     }
-
+    
     public String getName() {
         return name;
     }
-
+    
     public double getCashOnHand() {
         return cashOnHand;
     }
-
-    // Setters
-    public String setName(String newName) {
+    
+    // SETTERS
+    public void setName(String newName) {
         this.name = newName;
     }
-
+    
     public void setCashOnHand(double newBalance) {
         this.cashOnHand = newBalance;
     }
+    
+    // SPECIAL METHODS
+    public String printCustomerInfo() {
+        return "Customer " + getId() + " Info:" + "\nName: " + getName() + "\nCash on Hand: " + getCashOnHand();
+    }
 
-    // Special Methods
     public void addCash(double cashToAdd) {
         this.cashOnHand += cashToAdd;
     }

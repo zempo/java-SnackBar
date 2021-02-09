@@ -7,7 +7,7 @@ public class Snack {
     private static int maxId = 0;
 
     public int id;
-    public Sting name;
+    public String name;
     public int quantity;
     public double cost;
     private int vendingMachineId;
@@ -20,42 +20,42 @@ public class Snack {
         this.cost = cost;
         this.vendingMachineId = vendingMachineId;
     }
-
-    // Getters 
+    
+    // GETTERS
     public int getId() {
         return id;
     }
-
+    
     public String getName() {
         return name;
     }
-
+    
     public int getQuantity() {
         return quantity;
     }
-
+    
     public double getCost() {
         return cost;
     }
-
+    
     public int getVendingMachineId() {
         return vendingMachineId;
     }
-
-    // Setters 
+    
+    // SETTERS
     public void setName(String newName) {
         this.name = newName;
     }
-
+    
     public void setCost(double newCost) {
         this.cost = newCost;
     }
-
+    
     public void setVendingMachineId(int newId) {
         this.vendingMachineId = newId;
     }
-
-    // special methods
+    
+    // METHODS
     public void setQuantity(int amtToAdd) {
         this.quantity += amtToAdd;
     }

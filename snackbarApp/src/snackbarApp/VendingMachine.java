@@ -14,4 +14,10 @@ public class VendingMachine {
         this.id = maxId;
         this.name = name;
     }
+
+    // GETTERS
+
+    // SETTERS
+
+    // METHODS
 }
